@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2023-04-01T05:00:36.121Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="1qO9DoVlu4hnzE6MOq1l" version="21.1.2" type="device">
+  <diagram id="8EdXg-V_G5D-zmOJXyRM" name="第 1 页">
+    <mxGraphModel dx="757" dy="1740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="X5XJv08TGnf4dH30cQGS-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="C53yO7oKpuxl-ZIqxZP7-1" target="X5XJv08TGnf4dH30cQGS-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C53yO7oKpuxl-ZIqxZP7-1" value="const container = document.getElementId(&#39;root&#39;)&lt;br&gt;ReactDOM.createRoot(container)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="180" width="460" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-3" value="react-dom包导出的createRoot函数会经过一路函数命名修正，最后指向createFiberRoot函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="-200" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-4" target="X5XJv08TGnf4dH30cQGS-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-4" target="X5XJv08TGnf4dH30cQGS-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-4" value="import ReactDOM from &quot;react-dom/client&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="90" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-6" target="X5XJv08TGnf4dH30cQGS-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-6" value="react-dom/client.js" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-12" target="X5XJv08TGnf4dH30cQGS-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-12" value="react-dom/index.js" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-14" target="X5XJv08TGnf4dH30cQGS-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-14" value="react-dom/src/client/ReactDOM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-16" target="X5XJv08TGnf4dH30cQGS-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-16" value="./ReactDOMRoot&lt;br&gt;import {createContainer} from &quot;react-reconciler/src/ReactFiberReconciler&quot;&lt;br&gt;&lt;br&gt;function createRoot(container, options) {&lt;br&gt;const root = createContainer(container, ConcurrentRoot, null, isStrictMode, ...)&lt;br&gt;markContainerAsRoot(root.current, container)&lt;br&gt;return new ReactDOMRoot(root)&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="58.75" y="-390" width="502.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="X5XJv08TGnf4dH30cQGS-21" target="X5XJv08TGnf4dH30cQGS-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-21" value="react-reconciler/src/ReactFiberReconciler&lt;br&gt;&lt;br&gt;createContainer()" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="147.5" y="-560" width="325" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-23" value="createContainer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="-430" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-24" value="react-reconciler/src/ReactFiberRoot.old&lt;br&gt;function createFiberRoot () {&lt;br&gt;const root = new FiberRootNode()&lt;br&gt;const uninitializedFiber = createHostRootFiber()&lt;br&gt;root.current = uninitializedFiber&lt;br&gt;uninitializedFiber.stateNode = root&lt;br&gt;initializedUpdateQueue(uninitializedFiber)&lt;br&gt;return root&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-760" width="480" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="X5XJv08TGnf4dH30cQGS-26" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;size=0;" vertex="1" parent="1">
+          <mxGeometry x="561.25" y="-640" width="60" height="870" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,85 @@
+<mxfile host="Electron" modified="2023-04-02T14:01:12.403Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="1IEgd41tuY_X-mzfIjjU" version="21.1.2" type="device">
+  <diagram id="8EdXg-V_G5D-zmOJXyRM" name="第 1 页">
+    <mxGraphModel dx="1195" dy="1872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-39" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-840" width="910" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-3" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-800" width="760" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-4" value="div#root" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-750" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-5" value="FiberRoot&lt;br&gt;&lt;br&gt;(FiberRootNode)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-6" value="root&lt;br&gt;&lt;br&gt;(ReactDOMRoot)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-550" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-12" value="rootFiber&lt;br&gt;&lt;br&gt;(FiberNode)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" target="MyJ40yM-QHtb58Dm3n6z-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="-510.34000000000003" as="sourcePoint" />
+            <mxPoint x="460" y="-510.34000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-17" value="_internalRoot" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="MyJ40yM-QHtb58Dm3n6z-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-20" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" target="MyJ40yM-QHtb58Dm3n6z-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="-510.34000000000003" as="sourcePoint" />
+            <mxPoint x="700" y="-510.34000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-21" value="current" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="MyJ40yM-QHtb58Dm3n6z-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-22" value="" style="endArrow=classic;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;dashed=1;" edge="1" parent="1" source="MyJ40yM-QHtb58Dm3n6z-12" target="MyJ40yM-QHtb58Dm3n6z-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="-560" as="sourcePoint" />
+            <mxPoint x="510" y="-560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="-550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-23" value="stateNode" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="MyJ40yM-QHtb58Dm3n6z-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-24" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;dashed=1;" edge="1" parent="1" source="MyJ40yM-QHtb58Dm3n6z-5" target="MyJ40yM-QHtb58Dm3n6z-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="-560" as="sourcePoint" />
+            <mxPoint x="510" y="-560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-25" value="containerInfo" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="MyJ40yM-QHtb58Dm3n6z-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-32" value="" style="endArrow=classic;html=1;exitX=0.977;exitY=0.677;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;curved=1;" edge="1" parent="1" target="MyJ40yM-QHtb58Dm3n6z-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="598.2399999999998" y="-695.8399999999999" as="sourcePoint" />
+            <mxPoint x="751.04" y="-550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="-640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-33" value="__reactContainer$+randomKey" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="MyJ40yM-QHtb58Dm3n6z-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-34" value="&amp;lt;App /&amp;gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="750" y="-780" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MyJ40yM-QHtb58Dm3n6z-35" value="ReactDOM.createRoot之后，未调用render时的内存对象引用情况，此reactElement(&amp;lt;App /&amp;gt;)还独立在外，还未和目前创建的这些全局对象简历关联" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-420" width="300" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
