@@ -50,7 +50,7 @@ export function createRoot(
 
 ```
 
-![root-ReactDOMRoot](C:\Users\AniviaH\Desktop\React源码\ReactDOM.createRoot\root-ReactDOMRoot.png)
+![root-ReactDOMRoot](root-ReactDOMRoot.png)
 
 ### createContainer -> createFiberRoot
 
@@ -904,4 +904,4 @@ ReactDOMHydrationRoot.prototype.unmount = ReactDOMRoot.prototype.unmount = funct
 
 ## createRoot后内存引用情况
 
-![root](C:\Users\AniviaH\Desktop\React源码\ReactDOM.createRoot\root.png)
+![root](root.png)

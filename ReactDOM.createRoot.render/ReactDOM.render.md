@@ -168,7 +168,7 @@ export type UpdateQueue<State> = {|
 |};
 ```
 
-![Fiber与updateQueue的数据结构和引用关系](C:\Users\AniviaH\Desktop\React源码\ReactDOM.createRoot.render\Fiber与updateQueue的数据结构和引用关系.png)
+![Fiber与updateQueue的数据结构和引用关系](Fiber与updateQueue的数据结构和引用关系.png)
 
 ## enqueueUpdate
 
@@ -613,7 +613,7 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
 
 ## ScheduleMinHeap
 
-![task-heap](C:\Users\AniviaH\Desktop\React源码\ReactDOM.createRoot.render\task-heap.png)
+![task-heap](task-heap.png)
 
 ```typescript
 // scheduler/src/SchedulerMinHeap.js
@@ -981,4 +981,4 @@ react 运行的主干逻辑, 即将`输入转换为输出`的核心步骤, 实�
 
 --引用自github 图解React-[两大工作循环](https://7kms.github.io/react-illustration-series/main/workloop)
 
-![two-workloop](C:\Users\AniviaH\Desktop\React源码\ReactDOM.createRoot.render\two-workloop.png)
+![two-workloop](two-workloop.png)
