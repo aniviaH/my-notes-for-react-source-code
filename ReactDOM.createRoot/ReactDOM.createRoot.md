@@ -1,7 +1,5 @@
 # ReactDOM.createRoot流程
 
-
-
 ## createRoot
 
 ```typescript
@@ -11,7 +9,7 @@ export function createRoot(
   container: Element | Document | DocumentFragment,
   options?: CreateRootOptions,
 ): RootType {
-  // 创建root(FiberRootNode)和rootFiber(FiberNode), 两者通过current和stateNode相互引用
+  // 1. 创建root(FiberRootNode)和rootFiber(FiberNode), 两者通过current和stateNode相互引用
   const root = createContainer( // 转发调用createFiberRoot
     container,
     ConcurrentRoot, // 1
@@ -22,10 +20,10 @@ export function createRoot(
     onRecoverableError,
     transitionCallbacks,
   );
-  // 设置根容器(原生dom)指向rootFiber的引用
+  // 2. 设置根容器(原生dom)指向rootFiber的引用
   markContainerAsRoot(root.current, container);
 	
-  // 事件
+  // 3. 事件
   const rootContainerElement: Document | Element | DocumentFragment =
     container.nodeType === COMMENT_NODE
       ? (container.parentNode: any)
@@ -45,6 +43,7 @@ export function createRoot(
   		}
   	}
   */
+  // 4. 返回 ReactDOMRoot
   return new ReactDOMRoot(root);
 }
 
@@ -70,6 +69,7 @@ export function createFiberRoot(
   onRecoverableError: null | ((error: mixed) => void),
   transitionCallbacks: null | TransitionTracingCallbacks,
 ): FiberRoot {
+  // 1. 根据根dom，实例化 FiberRootNode
   const root: FiberRoot = (new FiberRootNode(
     containerInfo,
     tag,
@@ -78,16 +78,18 @@ export function createFiberRoot(
     onRecoverableError,
   ): any);
 
+  // 2. 创建 rootFiber
   const uninitializedFiber = createHostRootFiber(
     tag,
     isStrictMode,
     concurrentUpdatesByDefaultOverride,
   );
-  // 互相引用(FiberRoot <--> rootFiber(HostRootFiber))
+  // 互相引用(FiberRoot(class FiberRootNode) <--> rootFiber(class FiberNode))
   root.current = uninitializedFiber;
   uninitializedFiber.stateNode = root;
 
-  // 创建rootFiber的updateQueue
+  // 3. Hook相关
+  // 3.1 添加 memoizedState，与 Hook 对象一一对应的 Effect 对象
   if (enableCache) {
     const initialCache = createCache();
     retainCache(initialCache);
@@ -112,7 +114,7 @@ export function createFiberRoot(
     };
     uninitializedFiber.memoizedState = initialState;
   }
-
+  // 3.2 updateQueue属性，维护着一个由Effect.next属性连接的单向链表，将当前 Effect 对象加入到链表末尾
   initializeUpdateQueue(uninitializedFiber);
 
   return root;

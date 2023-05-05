@@ -472,6 +472,14 @@ function ensureRootIsScheduled(root: FiberRoot, currentTime: number) {
   root.callbackNode = newCallbackNode;
 }
 
+
+```
+
+## scheduleCallback
+
+```js
+// react-reconciler/src/ReactFiberWorkLoop.old.js
+
 function scheduleCallback(priorityLevel, callback) {
   if (__DEV__) {
     // If we're currently inside an `act` scope, bypass Scheduler and push to
@@ -527,6 +535,7 @@ var isPerformingWork = false;
 var isHostCallbackScheduled = false;
 var isHostTimeoutScheduled = false;
 
+// scheduler包入口函数
 function unstable_scheduleCallback(priorityLevel, callback, options) {
   var currentTime = getCurrentTime();
 
